@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(
+        #e92e3d,
+        #ff6e6a
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 20rem;
+    height: 14rem;
+    padding: 1rem;
+    background-color: #ffff;
+    border-radius: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dice-div img{
+    width: 5rem;
+}
+.dice-div{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+p{
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding-top: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+button{
+    width: 7rem;
+    height: 2.7rem;
+    margin-top: 1rem;
+    background-color: #e92e3d;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 0.3rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+.shake{
+    animation: shake 0.5s infinite;
+}
+@keyframes shake {
+    0%{
+        transform: rotate(8deg);
+    }   
+    50%{
+        transform: rotate(-8deg);
+    }
+    100%{
+        transform: rotate(8deg);
+    }
+}
